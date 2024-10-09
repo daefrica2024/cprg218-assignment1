@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-container{
+    background-color: #120323;
+    color: #97bf04;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    color: #120323;
+}
+
+aside{
+    background-color: #97bf04;
+}
+
+figure img{
+    border: 5px solid #d9043d;
+    display: block;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #d9043d;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .header-container img {
+        padding-top: 20px;
+    }
+    
+    aside {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    figure img {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    #container p {
+        display: block;        
+    }
+
+    aside {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer{
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .header-container {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .header-container img {
+        align-items: center;
+        padding: 20px;
+        margin-right: 10px;
+    }
+    
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: row; /* Puffin image and caption next to each other */
+        align-items: center; /* Center them horizontally */
+        text-align: left; /* Align text to the left */
+        gap: 20px;
+    }
+
+    figure img{
+        max-width: 300px;
+    }
+
+    aside {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer{
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-container {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .header-container img {
+        align-items: center;
+        padding: 20px;
+        margin-right: 10px;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: row;
+        /*align-items: flex-start;
+        padding: 20px;*/
+      }
+      
+    figure {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+                /*flex: 2; /* First column */
+        margin-right: 20px;*/
+    }
+
+    main {
+        flex: 3; /* Second column */
+        margin-right: 20px;
+    }
+
+    aside {
+        flex: 1; /* Sidebar (third column) */
+        padding: 20px;
+        margin: 20px;
+    }
+
+    footer{
+        padding: 10px;
+        text-align: center;
+    }
+}
